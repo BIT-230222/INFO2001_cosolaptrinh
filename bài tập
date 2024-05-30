@@ -1,3 +1,4 @@
+Bài 1
 using System;
 class Program {
     static void Main() {
@@ -8,6 +9,7 @@ class Program {
     }
 }
 
+Bài 2
 using System;
 
 class Program {
@@ -23,6 +25,7 @@ class Program {
     }
 }
 
+Bài 3
 using System;
 class Program {
     static void Main() {
@@ -33,6 +36,7 @@ class Program {
     }
 }
 
+Bài 4
 using System;
 class Program
 {
