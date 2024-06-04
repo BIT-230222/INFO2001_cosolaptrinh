@@ -22,3 +22,80 @@ class Program
         }
     }
 }
+
+Bài 2
+using System;
+
+namespace WeekDayProgram
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the number of the day of the week (1 for Monday, 2 for Tuesday, etc.): ");
+            int dayNumber = int.Parse(Console.ReadLine());
+
+            string dayName;
+
+            switch (dayNumber)
+            {
+                case 1:
+                    dayName = "Monday";
+                    break;
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+                case 3:
+                    dayName = "Wednesday";
+                    break;
+                case 4:
+                    dayName = "Thursday";
+                    break;
+                case 5:
+                    dayName = "Friday";
+                    break;
+                case 6:
+                    dayName = "Saturday";
+                    break;
+                case 7:
+                    dayName = "Sunday";
+                    break;
+                default:
+                    dayName = "Invalid day number";
+                    break;
+            }
+
+            Console.WriteLine("The day of the week is: " + dayName);
+        }
+    }
+}
+
+Bài 3
+using System;
+
+namespace FactorialProgram
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a positive integer: ");
+            int number = int.Parse(Console.ReadLine());
+
+            if (number < 0)
+            {
+                Console.WriteLine("Error: The number must be positive.");
+                return;
+            }
+
+            int factorial = 1;
+
+            for (int i = 1; i <= number; i++)
+            {
+                factorial *= i;
+            }
+
+            Console.WriteLine($"The factorial of {number} is: {factorial}");
+        }
+    }
+}
