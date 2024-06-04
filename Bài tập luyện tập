@@ -1,0 +1,24 @@
+Bài 1
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Nhap mot so: ");
+        double number = double.Parse(Console.ReadLine());
+
+        if (number > 0)
+        {
+            Console.WriteLine("So ban nhap la so duong.");
+        }
+        else if (number < 0)
+        {
+            Console.WriteLine("So ban nhap la so am.");
+        }
+        else
+        {
+            Console.WriteLine("So ban nhap la so 0.");
+        }
+    }
+}
